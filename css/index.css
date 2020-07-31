@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 15px; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.topNavBar {
+  background-color: #756e6e;
+  width: 1000px;
+  height: 52px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative; }
+  .topNavBar .logo {
+    height: 52px;
+    line-height: 52px;
+    float: left; }
+  .topNavBar .tabs {
+    margin: 0 23px; }
+    .topNavBar .tabs .tabsItem {
+      float: left;
+      padding: 0 17px; }
+
+.topStory {
+  background-color: #995858; }
