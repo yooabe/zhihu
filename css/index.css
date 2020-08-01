@@ -4,7 +4,10 @@
   box-sizing: border-box; }
 
 body {
-  font-size: 15px; }
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background: #f6f6f6; }
 
 a {
   text-decoration: none; }
@@ -13,21 +16,43 @@ li {
   list-style-type: none; }
 
 .topNavBar {
-  background-color: #756e6e;
-  width: 1000px;
-  height: 52px;
-  margin: 0 auto;
-  padding: 0 16px;
-  position: relative; }
-  .topNavBar .logo {
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  background-color: #fff; }
+  .topNavBar .appHeader-inner {
+    display: flex;
+    width: 1000px;
     height: 52px;
-    line-height: 52px;
-    float: left; }
-  .topNavBar .tabs {
-    margin: 0 23px; }
-    .topNavBar .tabs .tabsItem {
-      float: left;
-      padding: 0 17px; }
-
-.topStory {
-  background-color: #995858; }
+    padding: 0 16px;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    background-color: #645e5e; }
+    .topNavBar .appHeader-inner .tabs {
+      display: flex;
+      width: 222px;
+      margin: 0 23px;
+      float: left; }
+      .topNavBar .appHeader-inner .tabs .tabsItem {
+        padding: 0 17px; }
+        .topNavBar .appHeader-inner .tabs .tabsItem a {
+          display: inline-block;
+          color: #444; }
+    .topNavBar .appHeader-inner .searchBar {
+      display: flex;
+      width: 400px; }
+      .topNavBar .appHeader-inner .searchBar .searchBar-toolWrapper {
+        width: 326px; }
+        .topNavBar .appHeader-inner .searchBar .searchBar-toolWrapper .searchBar-tool .popover {
+          display: block;
+          height: 34px; }
+          .topNavBar .appHeader-inner .searchBar .searchBar-toolWrapper .searchBar-tool .popover .searchBar-input {
+            background-color: #f6f6f6;
+            padding-left: 12px; }
+            .topNavBar .appHeader-inner .searchBar .searchBar-toolWrapper .searchBar-tool .popover .searchBar-input input {
+              width: 256px;
+              height: 24px;
+              line-height: 24px;
+              background: transparent;
+              border: none; }
+      .topNavBar .appHeader-inner .searchBar .askButton {
+        float: left; }
