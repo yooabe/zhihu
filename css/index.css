@@ -27,7 +27,11 @@ button {
 
 .appHeader {
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1); }
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
   .appHeader .appHeader-inner {
     display: flex;
     align-items: center;
@@ -90,3 +94,43 @@ button {
         padding: 0 4px;
         bottom: 50%;
         left: 50%; }
+
+.topstory {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 60px; }
+  .topstory .topstory-mainColumn {
+    width: 694px;
+    background-color: #fff;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1); }
+    .topstory .topstory-mainColumn .topstory-tabCard {
+      border-radius: 2px; }
+      .topstory .topstory-mainColumn .topstory-tabCard .topstoryTabs {
+        display: flex;
+        border-bottom: 1px solid #f0f2f7;
+        height: 58px;
+        align-items: center; }
+        .topstory .topstory-mainColumn .topstory-tabCard .topstoryTabs .topstoryTabs-link {
+          margin: 0 22px;
+          font-size: 16px;
+          color: #1a1a1a; }
+    .topstory .topstory-mainColumn .topstoryItem {
+      border-bottom: 1px solid #f0f2f7;
+      padding: 20px; }
+      .topstory .topstory-mainColumn .topstoryItem .ContentItem-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #1a1a1a;
+        margin-top: 9px;
+        margin-bottom: -4px; }
+      .topstory .topstory-mainColumn .topstoryItem .RichContent-inner {
+        margin-top: 9px;
+        overflow: hidden; }
+        .topstory .topstory-mainColumn .topstoryItem .RichContent-inner .Button {
+          color: #175199; }
+  .topstory .globalSideBar {
+    flex: 1;
+    background-color: #fff; }
