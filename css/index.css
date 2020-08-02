@@ -21,6 +21,10 @@ a {
 div {
   display: block; }
 
+button {
+  border: none;
+  background-color: transparent; }
+
 .appHeader {
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1); }
@@ -46,7 +50,7 @@ div {
           background-color: #f6f6f6;
           border: 1px solid #ebebeb;
           border-radius: 3px;
-          padding: 4px 10px;
+          padding: 4px 12px;
           padding-right: 0; }
           .appHeader .appHeader-inner .searchBar .searchBar-toolWrapper .searchBar-tool .input-wrapper .input {
             flex: 1;
@@ -54,7 +58,8 @@ div {
             line-height: 24;
             background-color: transparent;
             outline: none;
-            border: none; }
+            border: none;
+            color: #828CA2; }
           .appHeader .appHeader-inner .searchBar .searchBar-toolWrapper .searchBar-tool .input-wrapper .searchBar-searchButton {
             border: none;
             background-color: transparent;
@@ -67,3 +72,21 @@ div {
         border-radius: 3px;
         padding: 0 14px;
         margin-left: 16px; }
+  .appHeader .appHeader-userInfo {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center; }
+    .appHeader .appHeader-userInfo .appHeader-notifications, .appHeader .appHeader-userInfo .appHeader-messages {
+      margin-right: 40px;
+      color: #7A859C;
+      position: relative; }
+      .appHeader .appHeader-userInfo .appHeader-notifications .css-ybodb, .appHeader .appHeader-userInfo .appHeader-messages .css-ybodb {
+        position: absolute;
+        color: #fff;
+        background-color: #EF3835;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 0 4px;
+        bottom: 50%;
+        left: 50%; }
